@@ -1,161 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAUTAM TRADER™ (ORIGINAL)</title>
 
-<title>Trading Community</title>
+    <!-- ========================================== -->
+    <!-- 1. META PIXEL & TRACKING CODE (START) -->
+    <!-- ========================================== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Facebook Pixel ID
+      fbq('init', '2143124326247554'); 
+      
+      // PageView Event
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=2143124326247554&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE (END) -->
+    <!-- ========================================== -->
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
+        body {
+            background-color: #0d0814;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            background-color: #0d0814;
+            padding: 40px 20px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
+        /* Circular Profile Image with Purple Glow */
+        .profile-sec {
+            margin-bottom: 30px;
+        }
 
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
+        .profile-box {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #e052ff, #7a35ff);
+            box-shadow: 0 0 35px rgba(224, 82, 255, 0.6);
+            overflow: hidden;
+        }
 
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
+        .profile-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
+        /* Title Styling */
+        .main-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #d1b5ff;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
 
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
+        .sub-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: #6bb2ff;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
 
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
+        /* Hindi Tagline Text */
+        .tagline {
+            font-size: 17px;
+            color: #ffffff;
+            line-height: 1.5;
+            margin-bottom: 35px;
+            font-weight: 600;
+            padding: 0 10px;
+        }
 
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
+        /* Text Label above button */
+        .join-text-lbl {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
 
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+        /* Purple Pink Gradient Join Button */
+        .join-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #ff1cf7 0%, #5122ff 100%);
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(230, 28, 255, 0.4);
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .join-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Footer Copyright */
+        .footer-text {
+            margin-top: 40px;
+            font-size: 13.5px;
+            color: #6d7085;
+            font-weight: 500;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
+    <div class="card-container">
+        
+        <!-- Profile Image -->
+        <div class="profile-sec">
+            <div class="profile-box">
+                <img src="profile.png" alt="Profile Image">
+            </div>
+        </div>
+
+        <!-- Heading Text -->
+        <div class="main-title">CA NITIN MURARKA
 </div>
+        <div class="sub-title">(ORIGINAL)</div>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Tagline / Description -->
+        <div class="tagline">
+            हम नही हमारे परिणाम बोलते है "Trading mein Mota profit karna hai Join karo"
+        </div>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Label -->
+        <div class="join-text-lbl">JOIN TELEGRAM</div>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Main Join Button -->
+        <a id="telegramLink" href="https://t.me/+wCSoRNqNI3MzNTY1" class="join-btn" onclick="trackButtonClick()">
+            JOIN TELEGRAM
+        </a>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- Footer -->
+        <div class="footer-text">
+            ©bholenotop . All rights reserved.
+        </div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+    </div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+    <!-- JavaScript - Pixel Tracking (Subscribe Event) -->
+    <script>
+        let telegramUrl = "https://t.me/+wCSoRNqNI3MzNTY1"; 
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+        // Set URL dynamically
+        document.getElementById("telegramLink").href = telegramUrl;
+
+        // Button Click Tracking (Subscribe Event Fire)
+        function trackButtonClick() {
+            if(typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TelegramBtnClick'); 
+                fbq('track', 'Subscribe'); 
+            }
+        }
+    </script>
 
 </body>
 </html>
